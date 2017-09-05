@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8"></meta>
+		<title>滑动导航栏</title>
+		<script scr=""></script>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+
+	<body>
+   <input type="button" value="往下" onclick="xia(100);"/>
+    <input type="button" value="往上" onclick="shang(0);"/>
+    <div style="width:50px;height:50px;background:red;" id="webkfaid"></div>
+    <script type="text/javascript">
+        function xia(sum){
+            var obj=document.getElementById("webkfaid");
+            obj.style.transition="-webkit-transform 500ms ease-out";
+            obj.style.webkitTransform="translate(0px,"+sum+"px) scale(1) translateZ(0px)";
+        }
+        function shang(sum){
+            var obj=document.getElementById("webkfaid");
+            obj.style.transition="-webkit-transform 500ms ease-out";
+            obj.style.webkitTransform="translate(0px,"+sum+"px) scale(1) translateZ(0px)";
+        }
+    </script>
+	</body>
+
+</html>
