@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Light7 Demo</title>
+		<meta name="description" content="light7: Build mobile apps with simple HTML, CSS, and JS components.">
+		<meta name="author" content="任行">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link href="css/base.css" rel="stylesheet" />
+    <link href="css/light7-min.css" rel="stylesheet" />
+    <link href="iconfont/iconfont.css" rel="stylesheet"/>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="http://www.light7.cn/dist/js/light7.js"></script>
+    <link href="css/light7-swipeout.css" rel="stylesheet" />
+    <script src="js/light7-swipeout.js" type="text/javascript"></script>
+    <link href="css/common.css" rel="stylesheet" />
+	</head>
+
+	<body>
+	<div class="page" id="page-ptr" style="background: #fff;">
+		<!--头部-->
+         <header class="bar bar-nav" style="height: 55px;background: #12B7F5;text-align: center;">
+                <img class="open-panel pull-left" data-panel="#panel-left" src="img/qq2 (2).jpg" width="40"/>
+                <div class="pull-right"><i class="iconfont iconf icon-add open-popover" data-popover=".my-popover"></i></div>
+                <div class="head-but">
+                   <span class="btn1 pull-left">消&nbsp;息</span>
+                   <span class="btn2">电&nbsp;话</span>
+                </div>
+         </header>        
+        <!--content-->
+        <div class="content page-content pull-to-refresh-content infinite-scroll" data-distance="100" style="padding-bottom: 60px;">
+        	 <!--下拉刷新-->
+         	  <div class="pull-to-refresh-layer">
+                 <div class="preloader"></div>
+                 <div class="pull-to-refresh-arrow"></div>
+              </div>     
+              <!--搜索栏-->
+              <div style="padding:7px 10px;margin-top: 10px;">
+                	<div class="text-center text-suo open-popover" data-popover=".my-popove"><i class="iconfont icon-fangdajing"></i>搜索</div>
+              </div>
+              <section style="padding: 5px 15px;line-height: 45px;">
+              	<div><span style="display: inline-block;width: 45px;height: 45px;border-radius: 50%;background: orange;font-size: 1.2rem;color: #fff;" class="iconfont icon-jingcaikandian texC mrgR10"></span>电话黄页<img src="img/dayu1.png" class="fr mrgT15" width="20"/></div>
+              	<div class="mrgT10"><span style="display: inline-block;width: 45px;height: 45px;border-radius: 50%;background:#12B7F5;font-size: 1.2rem;color: #fff;" class="iconfont icon-buluochengyuan texC mrgR10"></span>通讯录<img src="img/dayu1.png" class="fr mrgT15" width="20"/></div>
+              </section>
+              <h3 style="padding:3px 10px;font-size: .6rem;background: #E3E3E3;color: #666;">通话记录</h3>
+              <div>
+              	
+              </div>
+        </div>
+        
+        
+        
+        <nav class="bar bar-tab" style="font-size: 12px;border-top:1px solid  #ccc;">
+         	<a class="tab-item active" href="#">
+         		<span class="iconfont icon-xiaoxi icon"></span>
+         		<p class="tab-label">消息</p>
+         		<span class="badge" style="">22</span>
+         	</a>
+         	<a class="tab-item" href="#">
+         		<span class="iconfont icon-lianxiren icon"></span>
+         		<p class="tab-label">联系人</p>
+         	</a>
+         	<a class="tab-item" href="#">
+         		<span class="iconfont icon-22 icon"></span>
+         		<p class="tab-label">动态</p>
+         	</a>
+        </nav>	
+        
+        
+                <!--侧栏-->
+        <div class="panel-overlay"></div>
+        <div id="celan" class="panel panel-left panel-reveal theme-dark" id="panel-left" style="left: -13rem;width: 13rem;">
+        	<div style="padding:15px 10px 15px 25px;">
+        		<img class="pull-left" src="img/qq2 (2).jpg" width="55" style="border-radius: 50%;margin-right: 10px;" />
+        		<span class="iconfont icon-erweima pull-right" style="font-size:1.8rem;"></span>
+        		<p style="margin-top: 5px;">hehe</p>
+        		<p class="iconfont icon-taiyang" style="color: #fbcb31;">
+        			<i class="iconfont icon-taiyang"></i>
+        			<i class="iconfont icon-xingxing"></i>
+        			<i class="iconfont icon-xingxing"></i>
+        		</p>       	    
+        	</div>
+        	<ul id="celan-ul2">
+        		<li>"分享 建议讯 的歌曲《小新.....</li>
+        	    <li><i class="icon-gongzhonghao iconfont"></i><a href="#">了解会员特权</a><img src="img/dayu1.png" width="12"/></li>
+        	    <li><i class="iconfont icon-qianbao"></i><a href="#">QQ钱包</a><img src="img/dayu1.png" width="12"/></li>
+        	    <li><i class="iconfont icon-gexingzhuangban"></i><a href="#">个性装扮</a><img src="img/dayu1.png" width="12"/></li>
+        	    <li style="border-top: 1px solid #666"></li>
+        	    <li><i class="icon-shoucang iconfont"></i><a href="#">我的收藏</a><img src="img/dayu1.png" width="12"/></li>
+        	    <li><i class="iconfont icon-mili_riji"></i><a href="#">我的相册</a><img src="img/dayu1.png" width="12"/></li>
+        	    <li><i class="iconfont icon-wenjian"></i><a href="#">我的文件</a><img src="img/dayu1.png" width="12"/></li>
+        	</ul>
+        	<nav>
+        		<a href="#"><i class="iconfont icon-shezhi" style="margin:-7px 5px 0 0;"></i>设置</a>
+        		<a href="#"><i class="iconfont icon-yejian" style="margin-right: 5px;"></i>夜间</a>
+        	</nav>
+        </div>
+    </div>    
+    <script src="js/index.js"></script>	 
+	</body>
+</html>
