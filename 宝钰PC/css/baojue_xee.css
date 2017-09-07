@@ -1,0 +1,50 @@
+
+* {padding:0;margin:0;}
+/*a:-webkit-any-link {color:none;}*/
+.containner {width: 1000px;margin:0 auto;margin-top:30px;}
+
+.menu_left ul li {cursor:pointer;width:170px;height:45px;background-color: #eeeeee;list-style-type: none;text-align: center;line-height:45px;border-bottom: 1px solid #c5c5c5;}
+.menu_left ul li a {width:100%;height:100%;display:block;color:#8d8d8d;}
+.menu_left ul li a:hover{color:#4977ea;}
+.menu_left {display: inline-block;} 
+.menu_left ul li:first-child a {background-color: #193780;color:white;font-family: "微软雅黑";font-size: 14px;}
+.content_right {width:800px;float:right;}
+.load_line {width:100%;height:45px;background-color: #193780;color:white;line-height: 45px;}
+.load_line a {cursor:pointer;font-size: 14px;} 
+.load_line a:first-child {margin-left:47px;}
+.img_wrap {width:800px;margin-top:40px;}
+.img_wrap img {width:100%;}
+.title {font-size: 18px;font-weight:bold;font-family: "微软雅黑";text-align: center;margin-top: 30px;}
+.article {text-indent: 20px;color:#4e4e4e;font-size: 14px;margin-bottom: 35px;line-height: 25px;letter-spacing: 1px;}
+.act {background-color:#c8d9fe;color:#1c3582 !important;}
+
+
+
+/*----------------公司信息--------------------*/
+ .meg_title {margin-top: 32px;color:#717171;font-family: "微软雅黑";padding-left: 35px;font-size: 16px;}
+ .img_wrap_meg {width:300px;height:300px;float:right;padding-left:10px;}
+ .img_wrap_meg img {width:100%;}
+ .connect {color:#4e4e4e;font-size: 14px;margin-bottom: 10px;line-height: 25px;letter-spacing: 1px;}
+
+ /*--------------------合作伙伴----------------------*/
+ .co_list {width:110%;}
+ .co_list li {width:185px;height:100px;list-style-type: none;float:left;margin-right: 20px;margin-top:30px;}
+ .co_list li img {width:100%;height:100%;}
+ /*----------------------企业文化---------------------------*/
+
+ #title_cul {margin-top: 32px;color:#1e1e1e;font-size: 16px;}
+
+  /*-------------新闻中心---------------*/
+         .page_top {height:40px;border-bottom:1px solid #c5c5c5;line-height: 40px;margin-top: 20px;}
+         .new_list {height:180px;border-bottom: 1px dashed #c5c5c5;}
+         .new_list div:first-child {display: inline-block;width:180px;height:140px;background-color: #4976e8;margin-top:20px;}
+         .new_list div:last-child {display: inline-block;float:right;width:600px;height:150px;margin-top:20px;
+         font-family:"微软雅黑";}
+         .pre_news {color:#4e4e4e;font-size:14px;font-family:"微软雅黑";text-indent: 20px;margin-top:10px;overflow: hidden;height:95px;}
+         .new_list div:last-child a:last-child {position:relative;top:10px;}
+         .new_list div:first-child  img {width:100%;height:100%}
+         
+		 .new_list div:last-child a:first-child{font-family:"微软雅黑";color:#202020;display:block;font-size: 16px;}
+ 
+ /*------------------------新闻中心详情----------------------*/
+.news_bg {height:240px;width:100%;background-color:#4976e8;margin-top:20px;background-size:100% 100%;}
