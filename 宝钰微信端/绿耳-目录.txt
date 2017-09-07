@@ -1,0 +1,15 @@
+
+
+资产信息  asset.html
+资产信息详情 asset_details.html
+
+投融资信息:financing_information.html
+投融资详情:financing_detail.html
+
+租赁信息:legal_information.html
+租赁详情页：legal_detail.html
+
+债权信息:credit_information.html
+债权信息详情:credit_detail.html
+债权信息-无数据：credit_none.html
+

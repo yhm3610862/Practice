@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		 <meta name="format-detection" content="telephone=no" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>填写个人信息</title>
+		<link href="css/base.css" type="text/css" rel="stylesheet" />
+	   	<link rel="stylesheet" href="css/screen.css" />
+	</head>
+	<body>
+		<div class="main" style="padding-bottom: 85px;">
+			<header class="head texC">
+				<a href="" class="fl"><img src="image/nav_icon_home_nor.png" /></a>
+				<h1 class="cfff font18">资产信息</h1>
+			</header>
+			<section>
+				<div class="cont_head bgfff">
+					<span class="fl font16">筛选项</span>
+					<button class="fr open" onclick="open_close(this,0)"></button>
+				</div>
+				<ul class="cont_list">
+					<li>
+						<div class="cont_item_head">
+							<span class="fl font13 genre">资产类型</span>
+							<button class="fr close" onclick="open_close(this,1)"></button>
+							<span class="fr font13 astrict">不限</span>
+						</div>
+						<ul class="genre_list">
+							<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>固定资产</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>资产包</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="cont_item_head">
+							<span class="fl font13 genre">区域分布</span>
+							<button class="fr close" onclick="open_close(this,1)"></button>
+							<span class="fr font13 astrict">不限</span>
+						</div>
+						<ul class="genre_list">
+							<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>义乌市</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>金华市</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>义乌市</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>金华市</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="cont_item_head">
+							<span class="fl font13 genre">资产来源</span>
+							<button class="fr close" onclick="open_close(this,1)"></button>
+							<span class="fr font13 astrict">不限</span>
+						</div>
+						<ul class="genre_list">
+							<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>企业</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>个人</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="cont_item_head">
+							<span class="fl font13 genre">资产性质</span>
+							<button class="fr close" onclick="open_close(this,1)"></button>
+							<span class="fr font13 astrict">不限</span>
+						</div>
+						<ul class="genre_list">
+							<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>厂房</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>住宅</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>厂房</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>住宅</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="cont_item_head">
+							<span class="fl font13 genre">处置金额</span>
+							<button class="fr close" onclick="open_close(this,1)"></button>
+							<span class="fr font13 astrict">不限</span>
+						</div>
+						<ul class="genre_list">
+							<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>200万以下</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>200万-500万</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>200万以下</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>200万-500万</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="cont_item_head">
+							<span class="fl font13 genre">处置方式</span>
+							<button class="fr close" onclick="open_close(this,1)"></button>
+							<span class="fr font13 astrict">不限</span>
+						</div>
+						<ul class="genre_list">
+							<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>融资</span></li>
+							<li onclick="genre_select(this)" class="pitch_none"><span>转让置换</span></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="texC search bgfff">
+					<form action="#" method="post">
+						<input type="submit" value="搜索" class="search_btn cfff font17"/>
+					</form>
+				</div>
+			</section>
+			
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript">
+		$(function (){
+			var gener = $(".genre_list").length;
+//			alert(gener);
+			for (var i = 0;i < gener;i++) {
+				if ($(".genre_list").eq(i).find('li').length > 3) {
+					for (var j = 3;j < $(".genre_list").eq(i).find('li').length;j++) {
+						$(".genre_list").eq(i).find('li').eq(j).hide();
+					}
+				} else{
+					$(".genre_list").eq(i).siblings('.cont_item_head').find('button').hide().siblings('.astrict').css('margin-right','12.5%');	
+				}
+			}
+		})
+		function genre_select(dom){
+			$(dom).addClass('pitch_on').removeClass('pitch_none').siblings().addClass('pitch_none').removeClass('pitch_on');
+			$(dom).parent().siblings('div').find('.astrict').html($(dom).html()).css('color','#4976E8');
+			if ($(dom).find('span').html() == '不限') {
+				$(dom).parent().siblings('div').find('.astrict').css('color','#B2ACA8');
+			}
+			var html = $(dom).find('span').width();
+			var body = $('body').width();
+			if(body >320){
+//				alert("大");
+				if (html >= 70) {
+				$(dom).find('span').css('text-indent','18px');
+				}
+				if (html >= 57 &&html <=70) {
+					$(dom).find('span').css('text-indent','8px');
+				}
+			}else{
+				if(html >= 48){
+					$(dom).find('span').addClass('spill');
+//					alert("小");
+				}
+			}
+
+			$(dom).siblings().find('span').css({'text-indent':'0px'}).removeClass('spill');
+		}
+		function open_close(dom,mode){
+//			alert(mode);
+//			slide 滑入滑出
+//   		fade  淡入淡出
+			if ($(dom).hasClass('close')) {
+				if (mode == 0) {
+					$(dom).parent().next().fadeIn();
+				} else{
+					for (var j = 3;j < $(dom).parent().next().find('li').length;j++) {
+						$(dom).parent().next().find('li').eq(j).show();
+					}
+				}
+				$(dom).removeClass('close').addClass('open');
+			} else{
+				if (mode == 0) {
+					$(dom).parent().next().fadeOut();
+				} else{
+					for (var j = 3;j < $(dom).parent().next().find('li').length;j++) {
+						$(dom).parent().next().find('li').eq(j).hide();
+					}
+				}
+				$(dom).removeClass('open').addClass('close');
+			}
+			
+		}
+	</script>
+</html>

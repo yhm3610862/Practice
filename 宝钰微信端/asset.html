@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+<title>资产信息</title>
+<link href="css/base.css" type="text/css" rel="stylesheet"/>
+<link href="css/animate.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/lver.css" />
+</head>
+<body style="background: #f4f4f4;">
+    <div class="main">
+    	<header class="header">
+			<h3 class="texC font18 cfff">资产信息</h3>
+            <a href="javascript:void(0);"><img src="image/nav_icon_home_nor.png" width="22" class="index" /></a>
+            <a href="javascript:void(0);"><img src="image/nav_icon_search_nor.png" width="22" class="sousou" /></a>
+		</header>
+    	<div class="banner">
+    		<img src="image/banner.png" width="100%" />
+    	</div>
+        <!--筛选项-->
+        <div id="shaixuanxiang">
+        	<div class="shaixuan" onclick="open_close(this,0)">
+	    		<span class="font15 text">筛选项</span>
+	    		<button class="fr open"></button>
+        	</div>
+	        <ul class="cont_list">
+				<li>
+					<div class="cont_item_head"  onclick="open_close(this,1)">
+						<span class="fl font13 genre">资产类型</span>
+						<button class="fr close"></button>
+						<span class="fr font13 astrict">不限</span>
+					</div>
+					<ul class="genre_list">
+						<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>固定资产</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>资产包</span></li>
+					</ul>
+				</li>
+				<li>
+					<div class="cont_item_head" onclick="open_close(this,1)">
+						<span class="fl font13 genre">区域分布</span>
+						<button class="fr close"></button>
+						<span class="fr font13 astrict">不限</span>
+					</div>
+					<ul class="genre_list">
+						<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>义乌市</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>金华市</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>义乌市</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>金华市</span></li>
+					</ul>
+				</li>
+				<li>
+					<div class="cont_item_head" onclick="open_close(this,1)">
+						<span class="fl font13 genre">资产来源</span>
+						<button class="fr close"></button>
+						<span class="fr font13 astrict">不限</span>
+					</div>
+					<ul class="genre_list">
+						<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>企业</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>个人</span></li>
+					</ul>
+				</li>
+				<li>
+					<div class="cont_item_head" onclick="open_close(this,1)">
+						<span class="fl font13 genre">资产性质</span>
+						<button class="fr close"></button>
+						<span class="fr font13 astrict">不限</span>
+					</div>
+					<ul class="genre_list">
+						<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>厂房</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>住宅</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>厂房</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>住宅</span></li>
+					</ul>
+				</li>
+				<li>
+					<div class="cont_item_head" onclick="open_close(this,1)">
+						<span class="fl font13 genre">处置金额</span>
+						<button class="fr close"></button>
+						<span class="fr font13 astrict">不限</span>
+					</div>
+					<ul class="genre_list">
+						<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>200万以下</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>200万-500万</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>200万以下</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>200万-500万</span></li>
+					</ul>
+				</li>
+				<li>
+					<div class="cont_item_head" onclick="open_close(this,1)">
+						<span class="fl font13 genre">处置方式</span>
+						<button class="fr close"></button>
+						<span class="fr font13 astrict">不限</span>
+					</div>
+					<ul class="genre_list">
+						<li onclick="genre_select(this)" class="pitch_on"><span>不限</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>融资</span></li>
+						<li onclick="genre_select(this)" class="pitch_none"><span>转让置换</span></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="texC search bgfff">
+				<!--<form action="#" method="post">-->
+					<input type="submit" value="搜索" class="search_btn cfff font17" onclick="soushuo()" />
+				<!--</form>-->
+			</div>
+		</div>
+		
+		<!--/筛选项-->
+        <section id="shaixuanhou">
+        	<div class="shaixuan" onclick="change()">
+	    		<span class="font15 text">筛选项</span>
+	    		<button class="fr close"></button>
+        	</div>
+        	<div class="asset_contain">
+        		<div class="option_style font15">
+        			<ul>
+        				<li>租赁类型</li>
+        				<li>租赁金额</li>
+        				<li>项目名称</li>
+        			</ul>
+        		</div>
+        		<div class="contain_main font14">
+        			<ul>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">资产包</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">资产包</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">资产包包</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">固定资产</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">资产包</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">资产包</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">资产包</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        				<li>
+        					<a href="" class="item">
+        						<div class="leixing">资产包</div>
+        						<div class="money">200万元</div>
+        						<div class="xiangmuname">我我我我我我我我我我我哦喔喔我我</div>
+        					</a>
+        				</li>
+        			</ul>
+        		</div>
+        	</div>
+        	<form method="post" action="" class="texC mT10 font14">
+					<input class="indent_more  c67" type="submit" value="查看更多" name="" />
+			</form>
+        </section>
+ 
+        <footer class="footer borT bgfff texC">
+        	<ul>
+            	<li class=""><a href="javascript:void(0);">
+                	<img src="image/StatesBar_consultation_nor.png" width="22" class="img_1" />
+                    <img src="image/StatesBar_consultation_sel.png" width="22" class="img_2" />
+                    <h3 class="font11">电话咨询</h3></a>
+                </li>
+                <li><a href="javascript:void(0);">
+                	<img src="image/StatesBar_MS-consultings_nor.png" width="22" class="img_1" style="margin-bottom:3px;margin-top:8px;" />
+                    <img src="image/StatesBar_MS-consultings_sel.png" width="22" class="img_2" />
+                    <h3 class="font11">信息咨询</h3></a>
+                </li>
+                <li><a href="javascript:void(0);">
+                	<img src="image/StatesBar_Contact-us_nor.png" width="18" class="img_1" />
+                    <img src="image/StatesBar_Contact-us_sel.png" width="18" class="img_2" />
+                    <h3 class="font11">联系我们</h3></a>
+               	</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lver.js" ></script>
+</html>

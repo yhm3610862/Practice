@@ -1,0 +1,23 @@
+/* CSS Document */
+.focus{position:relative;}
+.focus .hd{position:absolute;bottom:20px;width:100%;z-index:1;height:8px;}
+.focus .hd li{width:8px;height:8px;background:url(../image/banner_icon_Slider_1.png) no-repeat center center;background-size:100% 100%;display:inline-block;overflow:hidden;margin:0 2px;line-height:30px;}
+.focus .hd li.on{background:url(../image/banner_icon_Slider.png) no-repeat center center;background-size:100% 100%;}
+
+.t_xie{height:100px;overflow:hidden;}
+.t_xie li{float:left;width:25%;}
+.t_xie li img{margin-top:20px;margin-bottom:5px;}
+.t_table .hd{height:44px;line-height:40px;}
+.t_table .hd li{float:left;width:25%;}
+.t_table .hd li a{color:#282828;padding-bottom:3px;}
+.t_table .hd li.on a{border-bottom:1px solid #4976e8;color:#4976e8;}
+
+
+.tab_top{height:32px;padding:0 12px;color:#282828;line-height:32px;}
+.tab_top h3{float:left;}
+.tab_main{padding:0 12px;}
+.tab_main .t_title{display:block;width:59px;height:21px;line-height:21px;border:1px dashed #4976e8;border-radius:5px;margin-top:7px;}
+.tab_main li{height:36px;border-bottom:1px dashed #e0e0e0;}
+.tab_main .t_mony{display:block;width:29%;margin-left:10%;text-align:center;line-height:36px;}
+.tab_main a{color:#282828;display:block;height:36px;}
+.tab_main .t_word{width:40%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;line-height:36px;}

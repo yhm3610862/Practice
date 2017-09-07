@@ -1,0 +1,4 @@
+body{background-color:#f4f4f4 ;}
+.loading{position: absolute;left: 50%;top: 50%;margin:-10px 0 0 -43px ;}
+.loading p{padding: 0 0 0 8px;color: #b2aca8;}
+.loading img{margin: -2px 0 0 0;}
