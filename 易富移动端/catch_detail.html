@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/catch_detail.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/easySlider.js"></script>
+	</head>
+
+	<body>
+		<div id="Page">
+			<div class="banner">
+				<a onClick="javascript :history.back(-1);"><img src="images/jt.png" class="flag-jt" /></a>
+				<h2 class="text-center">0元夺宝详情</h2>
+			</div>
+			<div id="slider">
+				<ul class="slides clearfix">
+					<li><img class="responsive" src="images/slide/1.jpg"></li>
+					<li><img class="responsive" src="images/slide/2.jpg"></li>
+					<li><img class="responsive" src="images/slide/3.jpg"></li>
+					<li><img class="responsive" src="images/slide/4.jpg"></li>
+				</ul>
+				<ul class="controls">
+					<li><img src="images/slide/prev.png" alt="previous"></li>
+					<li><img src="images/slide/next.png" alt="next"></li>
+				</ul>
+				<ul class="pagination">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="container-fluid title_div">
+				<p class="title_p">
+					<span>
+						第五期
+					</span>
+					十元话费直冲 移动/联通/电信通用
+					<span class="red">
+						夺中后再填写充值号码 无任何限制
+					</span>
+				</p>
+			</div>
+			<div class="container-fluid detail_div">
+				<div class="col-xs-3" style="padding: 0;">
+					<div class="red">
+						进行中
+					</div>
+				</div>
+				<div class="col-xs-9" style="border-left: 1px solid lightgray;">
+					<div class="progress" style="margin-bottom: 0;">
+							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+										99/120人次
+							</div>
+					</div>
+				</div>
+			</div>
+			<section class="right_now">
+				<p>
+					你没有参与本期0元夺宝
+				</p>
+				<div>
+					<p class="button_bottom">
+						立即0元夺宝
+					</p>
+				</div>
+			</section>
+			<section class="join_now">
+				<a href="pic_detail.html">
+					<p style="font-size: 18px;">
+						图文详情
+						<span class="gray pull-right">
+							建议在WIFI下查看
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</span>
+					</p>
+				</a>
+				<a href="past_show.html">
+					<p style="font-size: 18px;">
+						往期揭晓
+						<span class="gray pull-right">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</span>
+					</p>
+				</a>
+				
+			</section>
+			
+		</div>
+		<script type="text/javascript">
+		$(function() {
+			$("#slider").easySlider( {
+				slideSpeed: 500,
+				paginationSpacing: "15px",
+				paginationDiameter: "12px",
+				paginationPositionFromBottom: "20px",
+				slidesClass: ".slides",
+				controlsClass: ".controls",
+				paginationClass: ".pagination"					
+			});
+		});
+	</script>
+	</body>
+
+</html>

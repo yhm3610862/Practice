@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/goldbag.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div id="Page">
+			<div class="banner">
+				<a onClick="javascript :history.back(-1);"><img src="images/jt.png" class="flag-jt" /></a>
+				<h2 class="text-center">自动投注</h2>
+				<a href="">
+					<button class="flag-c">
+						确定
+					</button>
+				</a>
+			</div>
+			<section class="container-fluid show_sheet">
+				<div class="row">
+					<div class="pull-left">
+						金蛋：<span class="red">0</span>
+					</div>
+					<div class="pull-right">
+						小金库：<span class="red">0</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="check_sheet">
+				<ul id="myTab" class="nav nav-tabs container-fluid">
+					<li class="active col-xs-6">
+						<a href="#i_joined" data-toggle="tab">
+							存入金蛋
+						</a>
+					</li>
+					<li class="col-xs-6">
+						<a href="#i_goal" data-toggle="tab">
+							取出金蛋
+						</a>
+					</li>
+				</ul>
+				<div id="myTabContent" class="tab-content">
+					<div class="tab-pane fade in active" id="i_joined">
+						<form role="form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="存入金蛋">
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane fade" id="i_goal">
+						<form role="form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="取出金蛋">
+								<input type="text" class="form-control" placeholder="密码">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+
+</html>

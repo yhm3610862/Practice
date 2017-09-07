@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/auto_check.css" />
+	</head>
+
+	<body>
+		<div id="Page">
+			<div class="banner">
+				<a onClick="javascript :history.back(-1);"><img src="images/jt.png" class="flag-jt"/></a>
+				<h2 class="text-center">自动投注</h2>
+				<button class="flag-c">
+				开始投注
+				</button>
+			</div>
+			<section class="head_sheet container-fluid">
+				<span class="pull-left">
+					金蛋：
+					<span class="red">
+						0
+					</span>
+				</span>
+				<span class="pull-right">
+					小金库：
+					<span class="red">
+						0
+					</span>
+				</span>
+			</section>
+			<form>
+				<section class="per_sheet container-fluid">
+					<h4>
+						开始投注
+					</h4>
+					<div class="row form-group">
+						<div class="col-xs-5 text_word">
+							开始模式：
+						</div>
+						<div class="col-xs-7">
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-xs-5 text_word">
+							开始期号：
+						</div>
+						<div class="col-xs-7">
+							<input type="text" class="form-control" />
+						</div>
+					</div>
+				</section>
+				<section class="per_sheet container-fluid">
+					<h4>
+						结束投注（以下达到任意一项即停止自动投注）
+					</h4>
+					<div class="row form-group">
+						<div class="col-xs-5 text_word">
+							投注期达到：
+						</div>
+						<div class="col-xs-7">
+							<input type="text" class="form-control" />
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-xs-5 text_word">
+							金蛋>=
+						</div>
+						<div class="col-xs-7">
+							<input type="text" class="form-control" />
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col-xs-5 text_word">
+							金蛋<=
+						</div>
+						<div class="col-xs-7">
+							<input type="text" class="form-control" />
+						</div>
+					</div>
+					<div class="row red">
+						金蛋不够投注
+					</div>
+				</section>
+			</form>
+			<section class="per_sheet container-fluid set_rules">
+					<h4>
+						规则设置
+					</h4>
+					<div class="row">
+						<div class="col-xs-3" style="color: black;">
+							模式
+						</div>
+						<div class="col-xs-4" style="color: black;">
+							赢了使用
+						</div>
+						<div class="col-xs-4" style="color: black;">
+							输了使用
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							单中
+						</div>
+						<div class="col-xs-4">
+							单中
+						</div>
+						<div class="col-xs-4">
+							双中
+						</div>
+						<div class="col-xs-1">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							单中
+						</div>
+						<div class="col-xs-4">
+							单中
+						</div>
+						<div class="col-xs-4">
+							双中
+						</div>
+						<div class="col-xs-1">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							中14
+						</div>
+						<div class="col-xs-4">
+							单中
+						</div>
+						<div class="col-xs-4">
+							双中
+						</div>
+						<div class="col-xs-1">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+						</div>
+					</div>
+				</section>
+				<section class="submit_bottombar container-fluid">
+					<a href="set_rules.html">
+						<div class="clearfix center-block btn_show">
+							添加新模式
+						</div>
+					</a>
+					
+				</section>
+		</div>
+		
+	</body>
+</html>

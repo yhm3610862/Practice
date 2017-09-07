@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>支付宝提现</title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/alipay_2.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	</head>
+
+	<body>
+		<div id="Page">
+			<div class="banner">
+				<a onClick="javascript :history.back(-1);"><img src="images/jt.png" class="flag-jt" /></a>
+				<h2 class="text-center">Q币充值</h2>
+			</div>
+			
+				<div class="can">
+					<p>
+						当前可兑余额:<span class="red">2</span>元
+					</p>
+				</div>
+			
+			<section>
+				<div class="can">
+					<p>当前可兑余额:<span class="red">2</span>元</p>
+				</div>
+			</section>
+			<section class="rec container-fluid">
+				<div class="phone-num">
+					<span>支付宝账号:</span>
+					<input type="text" placeholder="邮箱地址/手机号码" />
+				</div>
+				<div class="phone-num">
+					<span>收款人姓名:</span>
+					<input type="text" placeholder="账号对应的认证姓名" />
+				</div>
+				<div>
+					<div class="row flo">
+						<div class="col-xs-6 text-center text_money money_1" style="position: relative;">
+							<img class="get_1" src="images/alipay/2.png" />
+							<span>20元</span>
+						</div>
+						<div class="col-xs-6 text-center text_money money_1" style="position: relative;">
+							<img class="get_2" src="images/alipay/2.png" />
+							<span>30元</span>
+						</div>
+						<div class="col-xs-6 text-center text_money money_1" style="position: relative;">
+							<img class="get_3" src="images/alipay/2.png" />
+							<span>50元</span>
+						</div>
+						<div class="col-xs-6 text-center text_money money_1" style="position: relative;">
+							<img class="get_4" src="images/alipay/2.png" />
+							<span>100元</span>
+						</div>
+					</div>
+				</div>
+				<div class="need">
+					<p>需要<span class="red">20.00</span>元</p>
+					<p style="margin-bottom: 10px;">
+						<span class="fa-stack fa-lg">
+  <i class="fa fa-circle-o fa-stack-2x" style="color:rgb(220,158,87);"></i>
+  <i class="fa fa-exclamation fa-stack-1x" style="color:rgb(220,158,87);"></i>
+</span>
+						金额不足
+					</p>
+				</div>
+				<button type="button" class="btn charge">马上充值</button>
+			</section>
+			<p style="text-align: center;color: darkgray;margin-top: 10px;">
+				充值的金额会充入你的支付宝余额，可在账单中查询
+			</p>
+		</div>
+		<script type="text/javascript">
+			$('.money_1').click(function(){
+				$(this).children('span').css('border','1px solid #ef4140');
+				$(this).children('img').css('display','block');
+				$(this).siblings().children('img').hide();
+				$(this).siblings().children('span').css('border','1px solid white');
+			});
+		</script>
+		
+	</body>
+
+</html>
